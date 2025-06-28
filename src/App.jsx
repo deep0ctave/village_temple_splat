@@ -8,7 +8,7 @@ import { useControls } from 'leva'
 
 extend({ TAARenderPass, OutputPass })
 
-const dylanebert = '/assets/temple.splat'
+const the_scene = 'https://huggingface.co/datasets/deep0ctave/splat_test/resolve/main/temple.splat'
 
 export default function App() {
   const { root } = useControls({ root: { value: 'default', options: ['default'] } })
@@ -24,7 +24,7 @@ export default function App() {
 
 const Default = () => (
   <>
-    <Splat src={`${dylanebert}`} position={[0, 0.25, 0]} />
+    <Splat src={`${the_scene}`} position={[0, 0.25, 0]} />
   </>
 )
 
